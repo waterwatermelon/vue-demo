@@ -1,4 +1,5 @@
 # Vue-cli 3.x使用教程（简单记录）
+对应的[demo地址](https://github.com/waterwatermelon/vue-demo)
 ## 安装
 ### 版本环境要求
 node.js >=8.9 (8.11.0 recommended)
