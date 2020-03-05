@@ -1,8 +1,11 @@
-<template>
-    <h4>
-        使用插件xlsx获取excel文件的数据，将其转成json格式
-    </h4>
-    <input type="file" @change="guideUpload"/>
+<template>  
+    <div>
+    
+        <h4>
+            使用插件xlsx获取excel文件的数据，将其转成json格式
+        </h4>
+        <input type="file" @change="guideUpload"/>
+    </div>
 </template>
 <script>
 import XLSX from 'xlsx';
@@ -22,7 +25,7 @@ export default {
                 wb = XLSX.read(data,{
                     type:'binary'
                 })
-                let excelData = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]])
+                let excelData = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]]);
                 console.log('excelData :', excelData);
             }
             if (rabs) {
